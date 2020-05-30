@@ -1,4 +1,4 @@
-#!C:\Users\Master\Documents\sat\sat_app\Scripts\python.exe
+#!C:\Users\Home\Source\Repos\sat1\sat_app\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'Mako==1.1.1','console_scripts','mako-render'
 __requires__ = 'Mako==1.1.1'
 import re

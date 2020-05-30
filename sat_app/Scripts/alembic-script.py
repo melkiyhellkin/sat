@@ -1,4 +1,4 @@
-#!C:\Users\Master\Documents\sat\sat_app\Scripts\python.exe
+#!C:\Users\Home\Source\Repos\sat1\sat_app\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'alembic==1.4.0','console_scripts','alembic'
 __requires__ = 'alembic==1.4.0'
 import re
