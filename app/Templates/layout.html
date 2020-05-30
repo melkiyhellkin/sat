@@ -15,8 +15,7 @@
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div>
-        Microblog:
+    <div class="menu">
         <a href="{{ url_for('index') }}">Home</a>
         <a href="{{ url_for('explore') }}">Explore</a>
         {% if current_user.is_anonymous %}
