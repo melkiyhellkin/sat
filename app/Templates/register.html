@@ -2,28 +2,31 @@
 <head>
     <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet"/>
 </head>
-<div style="width:500px; height:100px; border:1px solid #000; text-align:right">
+<div class="kil">
     {% block content %}
     <h1>Register</h1>
     <form action="" method="post">
         {{ form.hidden_tag() }}
-        <p>
-            {{ form.username.label }}<br>
-            {{ form.username(size=32) }}<br>
-        </p>
-        <p>
-            {{ form.email.label }}<br>
-            {{ form.email(size=64) }}<br>=
-        </p>
-        <p>
-            {{ form.password.label }}<br>
-            {{ form.password(size=32) }}<br>
-        </p>
-        <p>
-            {{ form.password2.label }}<br>
-            {{ form.password2(size=32) }}<br>
-        </p>
-        <p>{{ form.submit() }}</p>
+        <div class="regist_">
+            <p>
+                {{ form.username.label }}<br>
+                {{ form.username(size=32) }}<br>
+            </p>
+            <p>
+                {{ form.email.label }}<br>
+                {{ form.email(size=64) }}<br>
+            </p>
+            <p>
+                {{ form.password.label }}<br>
+                {{ form.password(size=32) }}<br>
+            </p>
+            <p>
+                {{ form.password2.label }}<br>
+                {{ form.password2(size=32) }}<br>
+            </p>
+
+            <a class="r">{{ form.submit() }}</a>
+        </div>
     </form>
     {% endblock %}
 </div>

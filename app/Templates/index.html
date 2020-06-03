@@ -4,10 +4,6 @@
 <div class="row">
     <h1>Hi, {{ current_user.username }}!</h1>
     <div class="col-md-4">
-        <h2>feed</h2>
-        <p>
-            Some news here
-        </p>
         {% if form %}
         <form action="" method="post">
             {{ form.hidden_tag() }}

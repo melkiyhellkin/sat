@@ -15,16 +15,15 @@
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
-    <div class="menu">
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('explore') }}">Explore</a>
-        {% if current_user.is_anonymous %}
-        <a href="{{ url_for('login') }}">Login</a>
-        {% else %}
-        <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
-        <a href="{{ url_for('logout') }}">Logout</a>
-        {% endif %}
-    </div>
+    <a class="menu" href="{{ url_for('index') }}">Home</a>
+    <a class="menu1" href="{{ url_for('explore') }}">Explore</a>
+    {% if current_user.is_anonymous %}
+    <a class="menu2" href="{{ url_for('login') }}">Login</a>
+    {% else %}
+    <a class="menu2" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+    <a class="menu2" href="{{ url_for('logout') }}">Logout</a>
+    {% endif %}
+    </div>   
     <hr>
     {% with messages = get_flashed_messages() %}
     {% if messages %}

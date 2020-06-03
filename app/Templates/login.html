@@ -8,22 +8,30 @@
     <h1>Sign in</h1>
     <form action="" method="post">
         {{ form.hidden_tag() }}
-        <p>
-            {{ form.username.label }}<br>
-            {{ form.username(size=32) }}<br>
-        </p>
-        <p>
-            {{ form.password.label }}<br>
-            {{ form.password(size=32) }}<br>
-        </p>
+        <div class="dws-input">
+            <div class="input-form">
+                <p>
+                    {{ form.username.label }}<br>
+                    {{ form.username(size=32) }}<br>
+                </p>
+            </div>
+            <div class="input-form">
+                <p>
+                    {{ form.password.label }}<br>
+                    {{ form.password(size=32) }}<br>
+                </p>
+            </div>
+        </div>
         <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
-        <p>{{ form.submit() }} <p>
+        <div class="dsw-sub" ><p>{{ form.submit() }}<p></div>
         <p>
             Forgot Your Password?
-            <a href="{{ url_for('reset_password_request') }}">Click to Reset It</a>
+                <a class="respa" href="{{ url_for('reset_password_request') }}">Click to Reset It</a>
         </p>
     </form>
-    <p>New User? <a href="{{ url_for('register') }}">Click to Register!</a></p>
+    <div class="buttreg">
+        <p>New User? <a class="buttregist" href="{{ url_for('register') }}">Click to Register!</a></p>
+    </div>
 </div>
 {% endblock %}
 
