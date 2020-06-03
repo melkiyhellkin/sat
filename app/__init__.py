@@ -6,7 +6,7 @@ from flask_login import LoginManager
 from flask_mail import Mail
 from flask_bootstrap import Bootstrap
 
-app = Flask(name, template_folder=Config.TEMPLATES_DIR)
+app = Flask(__name__, template_folder=Config.TEMPLATES_DIR)
 wsgi_app = app.wsgi_app
 app.config.from_object(Config)
 mail = Mail(app)
